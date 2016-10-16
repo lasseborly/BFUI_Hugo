@@ -1,0 +1,32 @@
+theme = "BFUI_Hugo"
+baseurl = "https://hugosite.com"
+languageCode = "en-us"
+title = "BFUI"
+
+[params]
+  description = "A jab at making the BFUI in HTML/CSS"
+  author = "Anders Enghøj & Lasse Borly"
+	subtitle = "Battlefield UI"
+
+  heroTitle = "Welcome to BFUI - Good luck soldier!"
+  heroContent = "A UI framework inspired by the Battlefield games"
+  heroImage = "bg3.jpg"
+
+[menu]
+  [[menu.main]]
+      name = "Home"
+      weight = 1
+      identifier = "home"
+      url = "/"
+
+  [[menu.main]]
+      name = "Posts"
+      weight = 2
+      identifier = "posts"
+      url = "/post/"
+
+  [[menu.secondary]]
+      name = "Power"
+      weight = 1
+      identifier = "power"
+      url = "/power"

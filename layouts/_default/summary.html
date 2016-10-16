@@ -1,0 +1,16 @@
+<div class='card {{ .Params.card }}'>
+  <div class="card-container">
+    <div class="card-img">
+      <img src='images/post-thumbnails/{{ .Params.thumbnail }}' />
+    </div>
+    <div class="card-content">
+      <span>{{ .Title }}</span>
+      <p>{{ .Summary }}</p>
+      <a href="{{ .RelPermalink }}">
+        <div class="card-action hidden-action">
+          read
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

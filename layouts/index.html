@@ -1,0 +1,32 @@
+{{ partial "head.html" . }}
+
+<body>
+  <main>
+
+    {{ partial "header.html" . }}
+    <div class="main-container">
+      {{ partial "navigation.html" . }}
+
+      <div class="container">
+        <div class="card full">
+          <div class="card-container">
+            <div class="card-img">
+              <img src="images/{{ .Site.Params.heroImage }}" style="object-position: 50%  30%" />
+            </div>
+            <div class="card-content">
+              <span>{{ .Site.Params.heroTitle }}</span>
+              <p>{{ .Site.Params.heroContent }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>Newest Posts</h2>
+        {{ range first 4 (where .Data.Pages.ByDate.Reverse "Section" "post") }}
+          {{ .Render "summary" }}
+        {{ end }}
+      </div>
+      
+  </main>
+</body>

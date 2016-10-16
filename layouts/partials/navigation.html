@@ -1,0 +1,16 @@
+<nav class="sticky">
+  {{ $currentNode := . }}
+  {{ $currentPage := .Permalink}}
+  <div id="brand" href="#">
+    <i id="menu-icon" class="material-icons">menu</i> <span>{{ .Site.Title }}</span>
+  </div>
+  <ul>
+  {{ range .Site.Menus.main }}
+  <li>
+    <a href="{{ .URL }}" class="nav-link {{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }}active{{end}}">
+      {{ .Name }}
+    </a>
+  </li>
+  {{ end }}
+  </ul>
+</nav>

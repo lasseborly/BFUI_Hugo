@@ -1,0 +1,12 @@
+name = "BFUI"
+license = "MIT"
+licenselink = "https://github.com/lasseborly/BFUI_Hugo/blob/master/LICENSE.md"
+description = ""
+homepage = "https://github.com/lasseborly/BFUI_Hugo/"
+tags = ["battlefield", "gaming"]
+features = ["Blog", "Pages"]
+min_version = 0.16
+
+[author]
+  name = "Lasse Borly <contact@lasseborly.dk"
+  homepage = "https://lasseborly.dk"

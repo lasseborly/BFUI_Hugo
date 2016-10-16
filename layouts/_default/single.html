@@ -1,0 +1,25 @@
+{{ partial "head.html" . }}
+
+<body>
+  <main>
+
+    {{ partial "header.html" . }}
+    {{ $baseurl := .Site.BaseURL }}
+    <div class="main-container">
+      {{ partial "navigation.html" . }}
+
+      <div class="container">
+        <section>
+          <img src='images/post-thumbnails/{{ .Params.thumbnail }}' />
+          <h2>{{ .Title }}</h2>
+          <time>{{ .Date.Format "2. January, 2006"}}</time>
+        </section>
+        <section>
+          <article>
+            {{ .Content }}
+          </article>
+        </section>
+      </div>
+
+  </main>
+</body>

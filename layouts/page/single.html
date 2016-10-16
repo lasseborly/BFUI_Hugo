@@ -1,0 +1,22 @@
+{{ partial "head.html" . }}
+
+<body>
+  <main>
+
+    {{ partial "header.html" . }}
+    <div class="main-container">
+      {{ partial "navigation.html" . }}
+
+      <div class="container">
+        <section>
+          <h1>{{ .Title }}</h1>
+        </section>
+        <section>
+          <article>
+            {{ .Content }}
+          </article>
+        </section>
+      </div>
+
+  </main>
+</body>
